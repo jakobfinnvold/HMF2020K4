@@ -117,9 +117,9 @@ Y2 = [y2; y2Dot; y2DotDot; y3; y3Dot];
 Z2 = [z2; z2Dot; z2DotDot; z3; z3Dot];
 
 %P3(t3) -> P3(t4)
-X3 = [x3; x3Dot; x3DotDot; x4; x4Dot];
-Y3 = [y3; y3Dot; y3DotDot; y4; y4Dot]; 
-Z3 = [z3; z3Dot; z3DotDot; z4; z4Dot];
+X3 = [x3; x3Dot; x3DotDot; x4; x4Dot; x4DotDot];
+Y3 = [y3; y3Dot; y3DotDot; y4; y4Dot; y4DotDot]; 
+Z3 = [z3; z3Dot; z3DotDot; z4; z4Dot; z4DotDot];
 
 %P4(t4) -> P4(t5)
 %X4 = [x4; x4Dot; x4DotDot; x5; x5Dot; y5DotDot];
@@ -131,7 +131,7 @@ Z3 = [z3; z3Dot; z3DotDot; z4; z4Dot];
   
 A_1 = [F3(T1); F3Dot(T1); F3DotDot(T1); F3(T2); F3Dot(T2)]; 
 A_2 = [F3(T2); F3Dot(T2); F3DotDot(T2); F3(T3); F3Dot(T3)];
-A_3 = [F3(T3); F3Dot(T3); F3DotDot(T3); F3(T4); F3Dot(T4)]; 
+A_3 = [F4(T3); F4Dot(T3); F4DotDot(T3); F4(T4); F4Dot(T4); F4DotDot(T4)]; 
 %A_4 = [F4(T4); F4Dot(T4); F4DotDot(T4); F4(T5); F4Dot(T5); F4DotDot(T5)]; 
    
 % Finding matrices of the unknowns for each point
@@ -164,9 +164,9 @@ Y_p2 = F(t2, BY2);
 Z_p2 = F(t2, BZ2); 
 
 % P3 at t = t3
-X_p3 = F(t3, CX3);
-Y_p3 = F(t3, CY3);
-Z_p3 = F(t3, CZ3); 
+X_p3 = F1(t3, CX3);
+Y_p3 = F1(t3, CY3);
+Z_p3 = F1(t3, CZ3); 
 
 % P4 at t = t4
 %X_p4 = F1(t4, DX4);
