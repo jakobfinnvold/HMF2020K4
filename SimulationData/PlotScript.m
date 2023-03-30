@@ -1,18 +1,18 @@
 
 Cylinder1_pos = get(out, "Cylinder_1_pos");
-Cylinder1_vel = get(out, "Cylinder_1_vel");
+%Cylinder1_vel = get(out, "Cylinder_1_vel");
 Cylinder2_pos = get(out, "Cylinder_2_pos");
-Cylinder2_vel = get(out, "Cylinder_2_vel");
+%Cylinder2_vel = get(out, "Cylinder_2_vel");
 SlewJoint_pos = get(out, "SlewJoint_pos");
-SlewJoint_vel = get(out, "SlewJoint_vel");
+%SlewJoint_vel = get(out, "SlewJoint_vel");
 timeseries = get(out, "tout"); 
 
 x_cyl1 = Cylinder1_pos(1,:);
-v_cyl1 = Cylinder1_vel(1,:);
+%v_cyl1 = Cylinder1_vel(1,:);
 x_cyl2 = Cylinder2_pos(1,:);
-v_cyl2 = Cylinder2_vel(1,:);
+%v_cyl2 = Cylinder2_vel(1,:);
 x_slew = SlewJoint_pos(1,:);
-v_slew = SlewJoint_vel(1,:); 
+%v_slew = SlewJoint_vel(1,:); 
 
 t = tiledlayout(2,3);
 nexttile
@@ -35,7 +35,7 @@ title('Slew Joint Position')
 xlabel('Time in s')
 ylabel('Position in m')
 grid on
-
+%%
 nexttile
 plot(timeseries, v_cyl1)
 title('Cylinder 1 Velocity')
