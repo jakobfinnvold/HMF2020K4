@@ -136,4 +136,4 @@ title('Velocity Profile of Slew Joint')
 ylabel('m/s')
 xlabel('Time in seconds')
 grid on
-ylim([-0.001, 0.015]);
+ylim([-0.001, 5e-3]);
