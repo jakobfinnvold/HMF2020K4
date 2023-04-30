@@ -49,15 +49,15 @@ z2DotDot = 0.05;
 
 %P3
 x3 = P3(1,1);
-x3Dot = -0.1;
+x3Dot = -0.01;
 x3DotDot = -0.05;
 
 y3 = P3(1,2);
-y3Dot =0.1;
+y3Dot =0.01;
 y3DotDot = 0.05; 
 
 z3 = P3(1,3);
-z3Dot = 0.1;
+z3Dot = 0.01;
 z3DotDot = 0.05;
 
 % P4
@@ -88,7 +88,7 @@ z4DotDot = 0;
 
 %Arbitary Constants (Timestamps for each point, t1, t2...)
 T1 = 0;
-T2 = 10.75;
+T2 = 14.33;
 T3 = T2*2;
 T4 = T2*3;
 T5 = T2*4; 
